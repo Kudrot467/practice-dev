@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive WEB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,700&family=Open+Sans:wght@400;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            display: flex;
+            gap: 100px;
+        }
+        .Kaku{
+            margin-top: 250px;
+            
+        }
+        .kaku-pic{
+            width: 600px;
+            height: 400px;
+        }
+        .head-title{
+            width: 350px;
+            color: var(--gray-1, #333);
+            font-family: Space Mono;
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: -2.24px;
+            padding-top: 200px;
+        }
+        .head-para{
+            color: var(--gray-2, #4F4F4F);
+            font-family: Space Mono;
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: -0.84px;
+            margin-top: 30px;
+        }
+        button{
+            width: 216px;
+            height: 68px;
+            background: var(--gray-1, #333);
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 300px;
+        }
+        @media screen and (max-width:576px)
+        {
+            .container{
+                display: grid;
+                gap: 0px;
+            }
+            .kaku-pic{
+                width: 100%;
+            }
+            .head-content{ 
+                width: 100%;
+               grid-template-columns: repeat(1,1fr);
+            }
+            .head-title{
+                padding-top: 0px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="Kaku">
+                <img class="kaku-pic" src="../images/Scarecrow.png" alt="">
+             </div>
+             <div class="head-content">
+                <h3 class="head-title">I have a bad news for you</h3>
+                <div class="head-para">
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus est velit fugit blanditiis accusantium. Error assumenda iste harum sequi nesciunt quos sint, recusandae nobis quisquam facere? Expedita, totam non!</p>
+                </div>
+                <div class="btn">
+                        <button>Back to home</button>
+                </div>
+             </div>
+        </div>
+    </main>
+</body>
+</html>
